@@ -1,4 +1,4 @@
-<script>
+
 		var apikey = "AIzaSyAHIDPKFSVbDwk-NdlAW8n3uh2q6AJkyAA";//Your Drive Api Key
                 var eid="";
                 var video="";
@@ -41,4 +41,4 @@ function getParameterByName(name, url = window.location.href) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-	</script>
+
