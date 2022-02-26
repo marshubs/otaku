@@ -12,11 +12,11 @@
           `;
           prompt('Here is Your Embed Code :- ',embed);
           window.location.href = window.location.href+'?id='+eid;
-        }, 
+        } 
         video = getParameterByName('id') ;
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
-        },
+        }
         var vidurl = "https://www.googleapis.com/drive/v3/files/"+video+"?alt=media&key="+apikey;
         document.write("<video controls id='video' src="+vidurl+"></video>");
 
@@ -31,7 +31,7 @@ gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
           `;
           prompt('Here is Your Embed Code :- ',code);
-},
+}
 
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
@@ -40,5 +40,5 @@ function getParameterByName(name, url = window.location.href) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
-};
+}
 
